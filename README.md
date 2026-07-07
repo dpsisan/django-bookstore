@@ -5,3 +5,26 @@ took me hours learning these
 
 honerable mention to
 LANA DEL REY AND OASIS for providing me their utmost support vibecoding and learning ts fkkk.
+
+
+## 📸 Screenshots
+
+### Home Page
+
+![Home](screenshots/home.png)
+
+### Book Detail
+
+![Book](screenshots/book.png)
+
+### Contact Form
+
+![Contact](screenshots/contact.png)
+
+### Contact Success
+
+![Success](screenshots/contactdone.png)
+
+### Admin Panel
+
+![Admin](screenshots/useradmin.png)
