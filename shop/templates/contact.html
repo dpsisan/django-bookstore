@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="contact-container">
+
+    <h1>Contact Us</h1>
+
+    {% if messages %}
+    {% for message in messages %}
+        <div class="success-message">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
+
+
+    <p class="contact-text">
+        Have a question, suggestion, or feedback? We'd love to hear from you.
+        Fill out the form below or connect with us through our contact details.
+    </p><br>
+
+    <div class="contact-wrapper">
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+
+            <form method="POST" action="{% url 'contact' %}">
+                {% csrf_token %}
+
+                <label for="name">Name:</label>
+                <input type="text" name= "name" id="name" placeholder="Enter your full name" required><br>
+                    <br>
+                <label for="email">Email:</label>
+                <input type="email" name= "email" id="email" placeholder="Enter your email address" required><br>
+   <br>
+                <label for="subject">Subject:</label>
+                <input type="text" name= "subject" id="subject" placeholder="Enter the subject"><br>
+   <br>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="6" placeholder="Write your message here..." required></textarea>   <br>
+   <br>
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </div>
+<br>
+        <!-- Contact Information -->
+        <div class="contact-info">
+
+            <div class="contact-box">
+                <h3>📧 Email</h3>
+                <p>bookstore@sijan.com</p>
+            </div>
+
+            <div class="contact-box">
+                <h3>📞 Phone</h3>
+                <p>+977-974639414</p>
+            </div>
+
+            <div class="contact-box">
+                <h3>📍 Address</h3>
+                <p>Kathmandu, Nepal</p>
+            </div>
+
+            <div class="contact-box">
+                <h3>📷 Instagram</h3>
+                <p>
+                    <a href="https://www.instagram.com/lit_sijan/" target="_blank">
+                        @lit_sijan
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
