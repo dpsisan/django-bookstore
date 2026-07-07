@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="hero">
+
+    <h1>Welcome to Our Online BookStore</h1>
+
+    <p>
+        Discover amazing books and begin your next reading adventure.
+    </p>
+
+</section>
+
+<section class="books" id="books">
+    <div class="search-box">
+    <form method="GET">
+        <input
+            type="text"
+            name="q"
+            placeholder="Search books..."
+            value="{{ request.GET.q }}"
+        >
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+   <h2>Featured Books</h2>
+
+<div class="book-container">
+
+    {% for book in books %}
+
+        <div class="book-card">
+            <h3>
+                 <a href="{% url 'book-detail' book.id %}">
+                      {{ book.title }}
+                 </a>
+            </h3>
+            <p>रु {{ book.price }}</p>
+            <p>Stock: {{ book.stock }}</p>
+            <button>Buy Now</button>
+        </div>
+{% for book in books %}
+
+    <!-- Book Card -->
+
+{% empty %}
+
+<h2>No books found.</h2>
+
+{% endfor %}
+
+    {% empty %}
+
+        <h3>No books available.</h3>
+
+    {% endfor %}
+
+</div>
+</section>
+
+<section class="contact" id="contact">
+
+    <h2>Contact Us</h2>
+
+    <br>
+
+    <p>Email: bookstore@sijan.com</p>
+
+    <p>Phone: +977-974639414</p>
+
+    <p>Address: Kathmandu, Nepal</p>
+
+</section>
+
+{% endblock %}

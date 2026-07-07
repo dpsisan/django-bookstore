@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    <h1>{{ book.title }}</h1>
+
+    <hr>
+
+    <h3>Price: रु {{ book.price }}</h3>
+
+    <h3>Stock: {{ book.stock }}</h3>
+    
+    <img src="{{ book.image }}" alt="{{ book.title }}" width="250">
+
+    {% if book.stock > 0 %}
+        <p style="color:green;"><strong>In Stock ✅</strong></p>
+    {% else %}
+        <p style="color:red;"><strong>Out of Stock ❌</strong></p>
+    {% endif %}
+
+    <br>
+
+    <button>Buy Now</button>
+
+    <a href="{% url 'home' %}">
+        <button>Back</button>
+    </a>
+
+</div>
+
+{% endblock %}
