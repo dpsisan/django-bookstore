@@ -4,4 +4,4 @@ and many more new things about models, views, static files, img srcs, base and b
 took me hours learning these 
 
 honerable mention to
-LANA DEL RAY AND OASIS for providing me their utmost support vibecoding and learning ts fkkk.
+LANA DEL REY AND OASIS for providing me their utmost support vibecoding and learning ts fkkk.
