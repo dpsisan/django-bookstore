@@ -3,7 +3,8 @@ Here, The major highlights of this project are i learned about creating superuse
 and many more new things about models, views, static files, img srcs, base and block creations and extensions etc etc 
 took me hours learning these 
 
-<<<<<<< HEAD
+
 honerable mention to
 LANA DEL REY AND OASIS for providing me their utmost support vibecoding and learning ts fkkk.
 
+Preview on Screenshot folder.
