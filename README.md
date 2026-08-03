@@ -5,6 +5,6 @@ took me hours learning these
 
 
 honerable mention to
-LANA DEL REY AND OASIS for providing me their utmost support vibecoding and learning ts fkkk.
+LANA DEL REY AND OASIS for providing me their utmost support and learning ts fkkk.
 
 Preview on Screenshot folder.
